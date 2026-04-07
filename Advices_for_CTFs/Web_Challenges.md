@@ -1,4 +1,4 @@
-# 🚩 Guide CTF - Web Hacking
+# 🚩 WEB Challenges
 
 > Méthodes et conseils généraux pour les challenges CTF de type Web.
 
