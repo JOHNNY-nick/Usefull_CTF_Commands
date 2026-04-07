@@ -278,15 +278,6 @@ gobuster dir -u https://site.com -w wordlist.txt
 
 ## 9. 🛠️ Outils utiles
 
-| Outil | Usage | Lien |
-|-------|-------|------|
-| **Burp Suite** | Intercepter et modifier les requêtes HTTP | [portswigger.net](https://portswigger.net/burp) |
-| **jwt.io** | Décoder/modifier des tokens JWT | [jwt.io](https://jwt.io) |
-| **base64decode.org** | Décoder du Base64 | [base64decode.org](https://www.base64decode.org) |
-| **CyberChef** | Encodage/décodage/crypto | [gchq.github.io/CyberChef](https://gchq.github.io/CyberChef) |
-| **ffuf** | Fuzzing de fichiers/répertoires | [github.com/ffuf/ffuf](https://github.com/ffuf/ffuf) |
-| **sqlmap** | Automatiser l'injection SQL | [sqlmap.org](https://sqlmap.org) |
-| **SecLists** | Wordlists pour fuzzing | [github.com/danielmiessler/SecLists](https://github.com/danielmiessler/SecLists) |
 
 ---
 
