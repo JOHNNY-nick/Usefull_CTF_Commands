@@ -185,5 +185,3 @@ peepdf challenge.pdf
 5. Toujours lire les **métadonnées** avec `exiftool`
 
 ---
-
-*Cheatsheet réalisée à partir de challenges CTF réels — bonne chance ! 🏁*
