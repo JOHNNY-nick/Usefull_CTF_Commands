@@ -14,7 +14,7 @@
 6. [LFI - Local File Inclusion](#6--lfi---local-file-inclusion)
 7. [Manipulation de Cookies](#7--manipulation-de-cookies)
 8. [Fichiers et routes cachés](#8--fichiers-et-routes-cachés)
-9. [Outils utiles](#9--outils-utiles)
+
 
 ---
 
@@ -274,12 +274,6 @@ gobuster dir -u https://site.com -w wordlist.txt
 ### Wordlists recommandées
 - [SecLists](https://github.com/danielmiessler/SecLists) → `Discovery/Web-Content/common.txt`
 
----
-
-## 9. 🛠️ Outils utiles
-
-
----
 
 ## 🧠 Réflexe général face à un challenge web
 
@@ -293,4 +287,3 @@ gobuster dir -u https://site.com -w wordlist.txt
 7. Tenter une injection (SQL, commande, LFI) selon le contexte
 ```
 
-> 💡 **Conseil** : toujours lire les indices avec attention, ils orientent directement vers la bonne technique.
