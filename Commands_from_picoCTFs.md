@@ -166,3 +166,27 @@ file ./binary
 Inspecte un fichier et identifie son type réel (indépendamment de l'extension). Pour un binaire, affiche des informations comme l'architecture, le type ELF, et indique notamment si le binaire est **stripped** ou non.
 
 > **Stripped binary** : binaire dont les symboles de débogage ont été retirés (noms de fonctions, variables, etc.) pour le rendre plus léger. Un binaire stripped est plus difficile à analyser avec GDB ou Ghidra car les noms de fonctions ne sont plus disponibles.
+
+## Remove Duplicate Lines Ignoring Specific Columns
+
+Deduplicate any file based on a subset of columns, ignoring specific fields by index.
+
+### Case 1 — Ignore the first `N` contiguous columns
+
+```bash
+awk '{key=""; for(i=N+1;i<=NF;i++) key=key" "$i; if(!seen[key]++) print}' input.txt > deduped.txt
+```
+
+> Replace `N` with the number of leading columns to ignore.
+
+### Case 2 — Ignore any non-contiguous columns
+
+```bash
+awk 'BEGIN{split("1 3 5", skip, " ")} {key=""; for(i=1;i<=NF;i++){found=0; for(j in skip) if(skip[j]==i){found=1; break}; if(!found) key=key" "$i}; if(!seen[key]++) print}' input.txt > deduped.txt
+```
+
+> Replace `"1 3 5"` with the indices of the columns you want to ignore.
+
+### Examples
+
+Given this file:
