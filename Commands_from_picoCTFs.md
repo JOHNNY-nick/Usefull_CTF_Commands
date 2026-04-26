@@ -187,6 +187,3 @@ awk 'BEGIN{split("1 3 5", skip, " ")} {key=""; for(i=1;i<=NF;i++){found=0; for(j
 
 > Replace `"1 3 5"` with the indices of the columns you want to ignore.
 
-### Examples
-
-Given this file:
